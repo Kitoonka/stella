@@ -1,8 +1,21 @@
-document.addEventListener('DOMContentLoaded', (event) => {
-    const button = document.getElementById('clickButton');
-    const message = document.getElementById('message');
+// Function to display a greeting when the page loads
+window.onload = function() {
+    alert("Welcome to Stella Kitoonka's Portfolio!");
+};
 
-    button.addEventListener('click', () => {
-        message.textContent = 'Button was clicked!';
+// Smooth scroll for navigation links
+const navLinks = document.querySelectorAll('nav a');
+
+navLinks.forEach(link => {
+    link.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default anchor click behavior
+        const targetId = this.getAttribute('href'); // Get the target section ID
+        const targetSection = document.querySelector(targetId); // Select the target section
+        
+        // Scroll to the target section smoothly
+        targetSection.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
     });
 });
