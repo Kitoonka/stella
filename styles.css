@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+   background-color: #16b145
 }
 
 header {
@@ -30,7 +30,7 @@ header nav ul li a {
 section {
     padding: 20px;
     margin: 10px;
-    background-color: #16b145;
+    background-color: #16b145
     border-radius: 5px;
 }
 
